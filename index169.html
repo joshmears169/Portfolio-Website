@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Josh's Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">    
+                   <div class="nav-link-wrapper active-nav-link">
+                        <a href="index169.html">Home</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="brand">
+                        <div>JOSHUA MEARS</div>
+                    </div>
+                </div>
+           </div>   
+           
+           <div class="content-wrapper">
+               <div class="portfolio-items-wrapper">
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(KohLipeBoat.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="transparent-icon-cloud.png">
+                            </div>
+
+                            <div class="subtitle">
+                                I used the virus lockdown as an opportunity to start a new career in AWS Cloud Computing.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(LangkawiLighthouse.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="internet.png">
+                            </div>
+
+                            <div class="subtitle">
+                                During lockdown I also taught myself html, css and a little javascript and produced this very portfolio!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(LuangPrabang.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="White_Globe_Icon.png">
+                            </div>
+
+                            <div class="subtitle">
+                                At the start of the year, my girlfriend and I went travelling across South East Asia for 2 months and experienced new cultures.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(Cambodia.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="white-pencil.png">
+                            </div>
+
+                            <div class="subtitle">
+                                I also used lockdown as an opportunity to revisit old hobbies and started drawing again.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(KrabiBoat.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="talk.png">
+                            </div>
+
+                            <div class="subtitle">
+                                When I got back home from travelling I decided to take up Spanish. I now do an hour and a half practice every morning.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(HaiVanPass.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="running-man.png">
+                            </div>
+
+                            <div class="subtitle">
+                                I now also keep fit by running 5 kilometres every other day.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(AngkorWat.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="certification.png">
+                            </div>
+
+                            <div class="subtitle">
+                                I currently have an AWS Cloud Practitioner certificate and I am also training to complete the AWS Solutions Architect certificate too.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(Buddah.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="clock-icon.png">
+                            </div>
+
+                            <div class="subtitle">
+                                In the future I would love to have a career in Cloud Computing and study for further certificates in the AWS collection. I would also love to work abroad at some point!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(LuangPrabang2.jpg)"></div>
+                        
+                        <div class="img-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="phone-icon.png">
+                            </div>
+
+                            <div class="subtitle">
+                                joshmears169@hotmail.com<br>
+                                LinkedIn: https://www.linkedin.com/in/joshua-mears-0666a483<br>
+                                07713129822
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </body>
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                portfolioItem.childNodes[1].classList.add('img-darken');
+            })
+
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+            })
+        })
+    </script>
+</html>
