@@ -13,10 +13,7 @@ response = table.get_item(
 
 count = response['Item']
 
-def update_count(): 
-    count['visitors'] += 1
-
-update_count()
+count['visitors'] += 1
 
 table.put_item(Item=count)
 
