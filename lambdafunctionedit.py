@@ -15,7 +15,6 @@ count = response['Item']
 
 def update_count(): 
     count['visitors'] += 1
-    return count
 
 update_count()
 
