@@ -1,11 +1,11 @@
-const countEl = document.getElementById('count');
+const visit_counter = document.getElementById('count');
 
 updateVisitCount();
 
 function updateVisitCount() {
-    fetch('httpdkclmsd')
+    fetch('https://c6jga50pg2.execute-api.eu-west-2.amazonaws.com/Prod')
         .then(res => res.json())
         .then(res => {
-        countEl.innerHTML = res.visits;
+        visit_counter.innerHTML = res.visitors;
     });
 }

@@ -14,10 +14,8 @@ def lambda_handler(event, context):
     )
     count = response['Item']
 
-    def update_count(): 
-        count['visitors'] += 1
-        return count
-
+    count['visitors'] += 1
+        
     table.put_item(Item=count)
 
     response = table.get_item(
@@ -25,8 +23,9 @@ def lambda_handler(event, context):
             'website': 'joshmearsportfolio'
         }
     )
+    
     count = response['Item']
 
-    return {
-           'body': count
-        }
+    print(count)
+
+lambda_handler()
