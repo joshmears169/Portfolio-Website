@@ -1,11 +1,11 @@
 import boto3
 import json
    
-dynamodb = boto3.resource('dynamodb')
-   
-table = dynamodb.Table('Visitors')
-
 def lambda_handler(event, context):  
+
+    dynamodb = boto3.resource('dynamodb')
+   
+    table = dynamodb.Table('Visitors')
 
     response = table.get_item(
         Key={
@@ -26,6 +26,5 @@ def lambda_handler(event, context):
     
     count = response['Item']
 
-    print(count)
+    return count
 
-lambda_handler()
