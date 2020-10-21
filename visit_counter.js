@@ -6,6 +6,7 @@ function updateVisitCount() {
     fetch('https://3pnd9hoy3j.execute-api.eu-west-2.amazonaws.com/Prod/VisitorCounter', {
     mode: 'cors',
     headers: {
+        "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Methods": "GET"
         }
