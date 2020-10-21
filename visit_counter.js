@@ -3,11 +3,10 @@ const visit_counter = document.getElementById('count');
 updateVisitCount();
 
 function updateVisitCount() {
-    fetch('https://dhtbtrg610.execute-api.eu-west-2.amazonaws.com/Prod', {
-        mode: 'cors'
-    })
+    fetch('https://3pnd9hoy3j.execute-api.eu-west-2.amazonaws.com/Prod/VisitorCounter'
+        )
         .then(res => res.json())
         .then(res => {
-        visit_counter.innerHTML = res.body.visitors;
+        visit_counter.innerHTML = res.visitors;
     });
 }
