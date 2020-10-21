@@ -8,6 +8,6 @@ function updateVisitCount() {
     })
         .then(res => res.json())
         .then(res => {
-        visit_counter.innerHTML = Math.trunc(res.body.visitors);
+        visit_counter.innerHTML = res.body.visitors;
     });
 }
